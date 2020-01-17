@@ -1,0 +1,12 @@
+{
+    "header": {
+        "title": "Tudo Sobre JQuery i18n"
+    },
+    "nav": {
+        "portuguese": "Português",
+        "english": "Inglês"
+    },
+    "content": {
+        "text": "Esse texto será traduzido!"
+    }
+}
