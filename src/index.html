@@ -15,14 +15,17 @@
     </div>
 
     <div class="translation-menu" id="nav">
-        <a class="btn-language" href="#" data-i18n="nav.portuguese" data-language="pt"></a>
-        <a class="btn-language" href="#" data-i18n="nav.english" data-language="en" ></a>
+        <a class="btn-language" href="#" data-i18n="nav.portuguese" data-language="pt" onclick="handleTranslationChangeClick(this)"></a>
+        <a class="btn-language" href="#" data-i18n="nav.english" data-language="en" onclick="handleTranslationChangeClick(this)"></a>
     </div>
 
     <div id="content">
-        <p data-i18n="content.text"></p>
-    </div>
-
-    <script src="./scripts/main.ts"></script>
+		<p data-i18n="content.text"></p>
+		<div id="inner-content">
+			<button data-i18n="content.inner-content.button" onclick="handleButtonClick()"></button>
+		</div>
+	</div>
+	
+	<script src="./scripts/main.ts"></script>
 </body>
 </html>

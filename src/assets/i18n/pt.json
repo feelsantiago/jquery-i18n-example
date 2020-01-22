@@ -7,6 +7,10 @@
         "english": "Inglês"
     },
     "content": {
-        "text": "Esse texto será traduzido!"
+		"text": "Esse texto será traduzido!",
+		"inner-content": {
+			"button": "Botão",
+			"alert": "Mensagem do alerta"
+		}
     }
 }

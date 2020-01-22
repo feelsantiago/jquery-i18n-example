@@ -1,19 +1,19 @@
-import $ from 'jquery';
+
 import TranslationService from './translation-service';
 
 import en from '../assets/i18n/en.json';
 import pt from '../assets/i18n/pt.json';
 
-const localize = () => {
-    $('#header').localize();
-    $('#nav').localize();
-    $('#content').localize();
+TranslationService.init({ en, pt }, 'en');
+
+window.handleTranslationChangeClick = (anchor: HTMLAnchorElement) => {
+	const language = anchor.getAttribute('data-language');
+	TranslationService.changeLanguage(language);
 }
 
-$(document).ready(async () => {
-    await TranslationService.init({ en, pt }, "en", $, localize);
+window.handleButtonClick = () => {
+	alert(TranslationService.translate('content.inner-content.alert'));
+}
 
-    $('.btn-language').click((event) => {
-        TranslationService.changeLanguage(event.target.getAttribute("data-language"));
-    })
-})
+
+

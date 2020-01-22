@@ -7,6 +7,10 @@
         "english": "English"
     },
     "content": {
-        "text": "This text will be translated!"
+		"text": "This text will be translated!",
+		"inner-content": {
+			"button": "Button",
+			"alert": "Alert message"
+		}
     }
 }
