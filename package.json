@@ -16,10 +16,7 @@
   },
   "dependencies": {
     "@types/i18next": "^13.0.0",
-    "@types/jquery": "^3.3.31",
     "i18next": "^19.0.3",
-    "i18next-browser-languagedetector": "^4.0.1",
-    "jquery": "^3.4.1",
-    "jquery-i18next": "^1.2.1"
+    "i18next-browser-languagedetector": "^4.0.1"
   }
 }
