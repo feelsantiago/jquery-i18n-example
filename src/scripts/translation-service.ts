@@ -48,7 +48,7 @@ class TranslationService {
 	
 	private run(resource: Resource) {	
 		const selectors = Object.keys(resource);
-		const elements = document.querySelectorAll(selectors.map(selector => `#${selector}, .${selector}`).join(', '));
+		const elements = document.querySelectorAll(selectors.map(selector => `#${selector}`).join(', '));
 		this.findTranslatedElements(elements, resource);		
 	}
 
