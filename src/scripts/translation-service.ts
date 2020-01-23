@@ -14,8 +14,6 @@ class TranslationService {
      * Initialize i18n and detect the browser language to translate.
      * @param resources Object with translations languages { en: { key: value }, pt: { key: value }}.
      * @param defaultLanguage Default language to fallback when language detection fails.
-     * @param $ JQuery Object
-     * @param jqueryLocalize Function that call JQuery.localize() to update texts.
      */
     async init<T, K extends keyof T>(resources: T, defaultLanguage: K) {
 
